@@ -1,0 +1,106 @@
+.product-additional {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 429px;
+    background: none;
+    border: 2px solid @color-basic-grey-light;
+    padding-top: 52px;
+    margin-top: 82px;
+  }
+}
+
+.product-additional__button {
+  border: none;
+  background-color: @color-white;
+  cursor: pointer;
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -7px;
+  }
+}
+
+.product-additional__title {
+  font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @color-black-light;
+  margin-top: 17px;
+  margin-bottom: 8px;
+  font-weight: normal;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-top: 42px;
+    margin-bottom: 23px;
+    font-weight: normal;
+    width: 135px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 45px;
+  }
+}
+
+.product-additional__intro {
+  font-family: "Arial", "Franklin Gothic Medium", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: @color-special-grey;
+  text-align: center;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    margin-bottom: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 168px;
+  }
+}
+
+.product-additional__button-all {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  color: @color-special-grey;
+  background-color: @color-basic-grey-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: @color-basic-grey;
+  }
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  &:active {
+    background-color: @color-basic-grey;
+    color: @color-black-opacity;
+  }
+}
+
+.product-additional__icon {
+  stroke: @color-grey-plus;
+
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}

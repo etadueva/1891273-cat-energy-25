@@ -1,0 +1,82 @@
+.link-details-catalog {
+  border-top: 1px solid @color-grey;
+  text-decoration: none;
+  display: block;
+  width: 240px;
+  min-height: 24px;
+  padding-top: 13px;
+  padding-bottom: 18px;
+
+  &:hover .link-details-catalog__icon {
+    width: 40px;
+    height: 12px;
+  }
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  &:active .link-details-catalog__icon {
+    width: 40px;
+    fill: @color-black-opacity;
+    stroke: @color-black-opacity;
+  }
+
+  &:active .link-details-catalog__text {
+    color: @color-black-opacity;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    width: 165px;
+    min-height: 38px;
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 180px;
+  }
+}
+
+.link-details-catalog__text {
+  font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+  }
+}
+
+.link-details-catalog__icon {
+  fill: @color-black;
+  stroke: @color-black;
+
+  &--slim {
+    margin-left: 13px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 26px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 29px;
+    }
+  }
+
+  &--pro {
+    margin-left: 15px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 28px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 4px;
+  }
+}

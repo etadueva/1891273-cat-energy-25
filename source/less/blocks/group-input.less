@@ -1,0 +1,513 @@
+.group-input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &--main-form {
+    border-bottom: 1px solid @color-basic-grey;
+  }
+
+  &--program-selection {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+
+    @media (min-width: @tablet-width) {
+      border: 1px solid @color-basic-grey-dark;
+      margin-top: 52px;
+      padding: 25px 28px;
+      min-height: 144px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+      width: 570px;
+      min-height: 196px;
+      box-sizing: border-box;
+    }
+  }
+
+  &--additional {
+    margin-bottom: 34px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: 221px 221px;
+      column-gap: 123px;
+      margin-bottom: 26px;
+    }
+
+    @media (min-width: @desktop-width) {
+      grid-template-columns: 221px 221px 221px 221px;
+      column-gap: 104px;
+      margin: 0 0  32px 0;
+    }
+  }
+
+  &--contact-details {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      flex-direction: row;
+    }
+  }
+
+  &--textarea {
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
+  }
+
+  &--personal-data {
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
+  }
+}
+
+.group-input__item {
+  font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @color-special-grey;
+  min-height: 46px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    min-height: 52px;
+    margin-bottom: 20px;
+  }
+
+  &--age {
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+      justify-content: space-between;
+    }
+  }
+
+  &--phone {
+    @media (min-width: @desktop-width) {
+      margin-right: -20px;
+    }
+  }
+}
+
+.group-input__input {
+  border: 1px solid @color-form-grey;
+  margin-left: 11px;
+  font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @color-special-grey;
+  width: 100%;
+  padding-left: 13px;
+  box-sizing: border-box;
+  height: 45px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: auto;
+    padding-left: 16px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 17px;
+    padding-left: 19px;
+  }
+
+  &:hover {
+    border-color: @color-basic-grey-dark;
+  }
+
+  &:focus {
+    border-color: @color-special-grey;
+  }
+
+  &--error {
+    border-color: @color-error;
+  }
+
+  &.group-input__input--error {
+    border: 1px solid @color-error;
+  }
+
+  &--textarea {
+    margin: 0;
+    padding: 0;
+    padding-top: 9px;
+    text-align: center;
+    min-height: 150px;
+    resize: none;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 15px;
+      padding-left: 17px;
+      text-align: start;
+      min-height: 174px;
+    }
+
+    @media (min-width: @desktop-width) {
+      min-height: 174px;
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 9px;
+      padding-left: 19px;
+    }
+  }
+
+  &--name {
+    width: 228px;
+
+    @media (min-width: @tablet-width) {
+      width: 567px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 506px;
+    }
+  }
+
+  &--weight {
+    width: 203px;
+
+    @media (min-width: @tablet-width) {
+      width: 536px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 475px;
+    }
+  }
+
+  &--age {
+    width: 172px;
+
+    @media (min-width: @tablet-width) {
+      width: 497px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 436px;
+    }
+  }
+
+  &--program-selection {
+    margin: 0;
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  &--email {
+    width: 219px;
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+      width: 551px;
+      margin-left: 16px;
+      padding-left: 23px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 486px;
+      margin-left: 21px;
+      padding-left: 18px;
+    }
+  }
+
+  &--phone {
+    width: 204px;
+
+    @media (min-width: @tablet-width) {
+      width: 535px;
+      padding-left: 22px;
+      margin-left: 24px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 472px;
+      padding-left: 17px;
+      margin-left: 30px;
+    }
+  }
+
+  &--additional {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    height: 30px;
+    width: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.group-input__input--additional:checked + .group-input__meaning--additional::after {
+  background-image: url("/img/icon-tick.svg");
+}
+
+.group-input__meaning {
+  font-size: 16px;
+  line-height: 18px;
+  position: relative;
+
+  &--program-selection {
+    display: flex;
+    justify-content: start;
+    min-height: 30px;
+  }
+
+  &--program-selection:not(:last-child) {
+    margin-bottom: 13px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &--email {
+    margin-top: 15px;
+    max-width: 70px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 16px;
+      width: 63px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 1px;
+    }
+  }
+
+  &--phone {
+    margin-top: 15px;
+    max-width: 70px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 16px;
+      width: 85px;
+    }
+  }
+
+  &--additional {
+    margin-left: 46px;
+    margin-bottom: 24px;
+    padding: 0;
+    color: @color-black;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-top: 13px;
+      font-size: 20px;
+      line-height: auto;
+      margin-bottom: 40px;
+      margin-left: 58px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 11px;
+      margin-left: 59px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 30px;
+      height: 30px;
+      left: -48px;
+      top: -5px;
+      border: 1px solid #cdcdcd;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 26px;
+
+      @media (min-width: @tablet-width) {
+        width: 38px;
+        height: 38px;
+        left: -59px;
+        top: -13px;
+      }
+
+      @media (min-width: @desktop-width) {
+        top: -11px;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--personal-data {
+    padding-top: 14px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 16px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 120px;
+    }
+  }
+
+  &--first {
+    margin-top: 4px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: auto;
+  }
+}
+
+.group-input__input--program-selection:checked ~ .group-input__heading::after {
+  background-image: url("/img/slider-control.svg");
+}
+
+.group-input__input.group-input__input--program-selection {
+  height: 30px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.group-input__heading {
+  padding-top: 6px;
+  margin-left: 45px;
+  position: relative;
+  color: @color-black;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 60px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: -2px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @color-basic-grey-dark;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px;
+    cursor: pointer;
+
+    @media (min-width: @tablet-width) {
+      top: -4px;
+      left: -60px;
+      width: 37px;
+      height: 37px;
+    }
+  }
+
+  &:hover&::after {
+    border-color: @color-tumb-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.group-input__icon {
+  position: relative;
+
+  &--email {
+    right: 35px;
+    top: 16px;
+    stroke: @color-special-grey-dark;
+    fill: none;
+
+    @media (min-width: @tablet-width) {
+      right: 36px;
+      top: 18px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: -20px;
+      padding-left: 18px;
+    }
+  }
+
+  &--phone {
+    right: 33px;
+    top: 13px;
+    fill: @color-black;
+
+    @media (min-width: @tablet-width) {
+      right: 35px;
+      top: 16px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 37px;
+      top: 15px;
+    }
+  }
+}
+
+.group-input__input--email:focus ~ .group-input__icon--email {
+  stroke: @color-green;
+}
+
+.group-input__input--phone:focus ~ .group-input__icon--phone {
+  fill: @color-green;
+}
+
+.group-input__input--error ~ .group-input__icon--email {
+  stroke: @color-error;
+}
+
+.group-input__input--error ~ .group-input__icon--phone {
+  fill: @color-error;
+}
+
+.group-input__input--additional:hover ~ .group-input__meaning--additional::after {
+  border-color: @color-tumb-grey;
+}
+
+.group-input__meaning--additional:hover ~ .group-input__meaning--additional::after {
+  border-color: @color-tumb-grey;
+}
+
+.group-input__input--additional:focus ~ .group-input__meaning--additional::after {
+  border-color: @color-green;
+}
+
+.group-input__meaning--additional:focus ~ .group-input__meaning--additional::after {
+  border-color: @color-green;
+}
+
+.group-input__input--program-selection:hover ~ .group-input__heading::after {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
+}
+
+.group-input__input--program-selection:focus ~ .group-input__heading::after {
+  border: 1px solid @color-green;
+}
+
+.group-input__input--program-selection:active ~ .group-input__heading::after {
+  border: 1px solid @color-green;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}

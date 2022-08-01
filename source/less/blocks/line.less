@@ -1,0 +1,23 @@
+.line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    right: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: @color-green;
+    z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      top: 87px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 97px;
+    }
+  }
+}

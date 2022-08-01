@@ -1,0 +1,28 @@
+.link-logo {
+  text-decoration: none;
+  width: 191px;
+  height: 55px;
+  padding-top: 10px;
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding-top: 54px;
+  }
+
+  &:hover .link-logo__image {
+    opacity: 80%;
+  }
+
+  &:focus .link-logo__image {
+    outline: 1px solid @color-green;
+  }
+
+  &:active .link-logo__image {
+    opacity: 60%;
+  }
+}

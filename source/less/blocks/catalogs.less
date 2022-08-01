@@ -1,0 +1,43 @@
+.catalogs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+    margin-top: 0;
+  }
+}
+
+.catalogs__item {
+  background-color: @color-basic-grey-light;
+  font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
+  color: @color-black;
+  margin-top: 20px;
+
+  &:not(:first-child) {
+    @media (min-width: @tablet-width) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 83px;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 83px;
+    }
+  }
+}

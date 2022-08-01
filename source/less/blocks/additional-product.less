@@ -1,0 +1,129 @@
+.additional-product {
+  border-bottom: 1px solid @color-basic-grey-dark;
+
+  &:first-child {
+    border-top: 1px solid @color-basic-grey-dark;
+  }
+
+  @media (min-width: @tablet-width) {
+    border-left: 1px solid @color-basic-grey-dark;
+    border-right: 1px solid @color-basic-grey-dark;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 325px 326px 244px;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.additional-product__discription {
+  @media (min-width: @mobile-width-only) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.additional-product__name {
+  @media (min-width: @mobile-width-only) {
+    margin: 0;
+    padding: 0;
+    color: @color-special-grey-dark;
+    font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+    font-weight: normal;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 24px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.additional-product__criteria {
+  color: @color-special-grey;
+  font-family: "Arial", "Franklin Gothic Medium", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  padding-bottom: 15px;
+  display: block;
+  width: 141px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
+    padding-top: 11px;
+    text-align: start;
+  }
+}
+
+.additional-product__value {
+  color: @color-special-grey;
+  font-family: "Arial", "Franklin Gothic Medium", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  padding-bottom: 15px;
+  display: block;
+  width: 141px;
+  text-align: end;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 49px;
+    font-size: 16px;
+    line-height: 24px;
+    width: 45px;
+
+    &--two {
+      margin-left: 49px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 38px;
+    padding-bottom: 0;
+    padding-top: 11px;
+
+    &--two {
+      margin-right: 46px;
+    }
+  }
+}
+
+.additional-product__button {
+  @media (min-width: @tablet-width) {
+    grid-column: 1/-1;
+    width: 632px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    grid-column: -1/-2;
+  }
+}

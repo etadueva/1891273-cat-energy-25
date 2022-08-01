@@ -1,0 +1,46 @@
+.button-catalog {
+  font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  width: 280px;
+  min-height: 40px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background-color: @color-green;
+  color: @color-white;
+  grid-column: 1/-1;
+
+  &:hover {
+    background-color: @color-green-dark;
+  }
+
+  &:focus {
+    outline: 1px solid @color-green;
+  }
+
+  &:active {
+    background-color: @color-green-dark;
+    color: @color-white-opacity;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
+
+  &--view {
+    color: @color-special-grey;
+    background-color: @color-basic-grey-light;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+}

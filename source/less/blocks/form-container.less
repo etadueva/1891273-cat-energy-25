@@ -1,0 +1,149 @@
+.form-container {
+  font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: @color-special-grey;
+  text-transform: uppercase;
+  margin-top: 37px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 54px;
+  }
+}
+
+.form-container__wrapper {
+  &--page {
+    @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  &--note {
+    @media (min-width: @desktop-width) {
+      position: relative;
+    }
+  }
+
+  &--submit {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.form-container__intro {
+  font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 37px;
+  margin-bottom: 39px;
+  display: block;
+  color: @color-black;
+  width: 226px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 40px;
+    display: block;
+    width: 323px;
+    margin-top: 54px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    grid-column: 1/-1;
+    margin-top: 56px;
+  }
+}
+
+.form-container__group {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 41px;
+    margin-right: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.form-container__submit {
+  font-family: "Oswald", "Franklin Gothic Medium", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: @color-white;
+  border: none;
+  text-transform: uppercase;
+  background-color: @color-green;
+  text-align: center;
+  min-height: 40px;
+  width: 280px;
+
+  &:hover {
+    background-color: @color-green-dark;
+  }
+
+  &:focus {
+    outline: 1px solid @color-black;
+  }
+
+  &:active {
+    background-color: @color-green-dark;
+    color: @color-white-opacity;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 41px;
+    width: 282px;
+    min-height: 52px;
+    font-size: 20px;
+    line-height: auto;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 568px;
+    margin-bottom: 67px;
+    margin-left: 1px;
+  }
+}
+
+.form-container__note {
+  font-family: "Arial", "Franklin Gothic Medium", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: @color-black;
+  text-transform: none;
+  text-align: center;
+  display: block;
+  margin-top: 21px;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    width: 181px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: 143px;
+    margin-top: -109px;
+    margin-bottom: 93px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    margin: 0;
+    right: -650px;
+    top: -101px;
+  }
+}
